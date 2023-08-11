@@ -1,0 +1,103 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(25, 2em); /* 25 colonnes */
+    grid-template-rows: repeat(15, 2em); /* 15 lignes */
+    grid-gap: 0px; /* Espace entre les cellules de la grille */
+    margin: 5% 10%;
+    border : 1px solid rgb(125, 124, 124);
+}
+
+.grid-item {
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    font-size: 15px;
+    line-height: 0px;
+    border: 0px solid white;
+}
+
+main
+{
+    display: flex;
+    align-items: center;
+}
+
+#panneau-control
+{
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 13em;
+}
+
+#panneau-control div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+#panneau-control button
+{
+    height: 2em;
+    width: 5em;
+    font-weight: Bolder;
+    border: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+    border-radius : 10px;
+}
+
+
+
+#panneau-control button:hover
+{
+    width: 5.5em;
+    height: 2.5em;
+    border: 1px solid green;
+}
+
+#panneau-control button:focus
+{
+    background-color: green;
+    color: white;
+}
+
+#panneau-control .laterale #Left
+{
+    margin-right: 100px;
+}
+
+#Reinitialiser
+{
+    background-color: rgb(106, 77, 77);
+    color: white;
+    min-width: 15em;
+    margin-top: 1em;
+}
+
+#score
+{
+    display: block;
+    font-size: 2em;
+    font-weight: 900;
+    color: black;
+    border: 1px solid rgb(49, 48, 48);
+}
+ 
+
+
+html {
+    height: 100%;
+    background: linear-gradient(132deg, #aa746d, #55424c,rgb(173, 194, 173),rgb(163, 44, 17));
+    background-size: 400% 400%;
+    animation: BackgroundGradient 20s ease infinite;
+  }
+  
+  @keyframes BackgroundGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+ 
